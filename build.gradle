@@ -1,0 +1,42 @@
+ext {
+    lombokVersion = '1.14.8'
+
+    springboot = [
+            starterDataJpa: "org.springframework.boot:spring-boot-starter-data-jpa"
+    ]
+
+    database = [
+            h2: "com.h2database:h2"
+    ]
+
+    testing = [
+            junit: "junit:junit"
+    ]
+
+    misc = [
+            lombok: "org.projectlombok:lombok:$lombokVersion"
+    ]
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        mavenCentral()
+        maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
+    }
+}
+

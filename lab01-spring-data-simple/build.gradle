@@ -1,0 +1,14 @@
+bootJar {
+    baseName = 'lab01-spring-data-simple'
+    version =  '0.1.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile springboot.starterDataJpa
+    compile database.h2
+    compile misc.lombok
+    testCompile testing.junit
+}
