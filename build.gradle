@@ -2,7 +2,8 @@ ext {
     lombokVersion = '1.14.8'
 
     springboot = [
-            starterDataJpa: "org.springframework.boot:spring-boot-starter-data-jpa"
+            starterDataJpa: "org.springframework.boot:spring-boot-starter-data-jpa",
+            starterDataRest: "org.springframework.boot:spring-boot-starter-data-rest"
     ]
 
     database = [

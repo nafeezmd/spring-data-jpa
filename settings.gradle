@@ -1,3 +1,5 @@
 rootProject.name = 'spring-data-jpa'
 
 include 'lab01-spring-data-simple'
+include 'lab02-spring-data-rest'
+
