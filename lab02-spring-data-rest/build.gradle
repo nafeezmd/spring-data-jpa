@@ -1,0 +1,14 @@
+bootJar {
+    baseName = 'lab02-spring-data-rest'
+    version =  '0.1.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile springboot.starterDataJpa, springboot.starterDataRest
+    compile database.h2
+    compile misc.lombok
+    testCompile testing.junit
+}
